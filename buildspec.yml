@@ -3,13 +3,14 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo Testing docker-compose in Code Build 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢
-      - 
+      - echo Testing docker-compose in Code Build
+      - echo 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢
   build:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker-compose up -d
+      - docker ps -a
   post_build:
     commands:
       - echo Build completed on `date`
@@ -17,3 +18,4 @@ phases:
       - docker-compose stop
       - docker-compose rm --force
       - echo END OF DEMO 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢
+      - echo 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢
