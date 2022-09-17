@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Testing docker-compose in Code Build 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢
+      - 
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...          
+      - docker compose up -d   
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo stopping all Docker Containers
+      - docker compose stop
+      - y | docker compose rm
+      - echo END OF DEMO 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢
