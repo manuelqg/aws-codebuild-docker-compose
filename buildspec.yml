@@ -4,7 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Testing docker-compose in Code Build
-      - echo 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢
+      - echo 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢 🐳🐳🐳🐳🐳🚢🚢🚢🚢🚢🚢🚢🚢
   build:
     commands:
       - echo Build started on `date`
